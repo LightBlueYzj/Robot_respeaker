@@ -1,0 +1,18 @@
+<launch>
+
+
+    <node name="recognizer" pkg="robot_voice" type="recognizer.py" output="screen" />
+
+    <node name="Port" pkg="robot_voice" type="Port.py" output="screen" />
+
+    <include file="$(find sound_play)/soundplay_node.launch"></include>
+
+    <node name="Angle" pkg="robot_voice" type="Angle.py" output="screen" />
+    
+    <node name="Asking" pkg="robot_voice" type="Asking.py" output="screen" />
+
+    <node name="file" pkg="robot_voice" type="file.py" output="screen" />
+     
+     
+    
+</launch>
